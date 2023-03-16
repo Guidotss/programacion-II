@@ -13,7 +13,7 @@ int main(){
     cout<<"ingrese la pos en X: ";
     int posX; 
     cin>>posX; 
-
+ 
     cout<<"ingrese la unidad de saltos del grillo: "; 
     int unidad;
     cin>>unidad; 
