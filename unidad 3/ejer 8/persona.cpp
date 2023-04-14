@@ -11,7 +11,7 @@ Persona::Persona() {
     altura = 0;
 }
 
-Persona::Persona(std::string _nombre, int _edad, std::string _sexo) {
+Persona::Persona(std::string _nombre, int _edad, std::string _sexo){
     nombre = _nombre;
     edad = _edad;
     sexo = _sexo;
