@@ -13,7 +13,7 @@ NumeroComplejo::NumeroComplejo(float _real, float _imaginario)
     imaginario = _imaginario;
 }
 
-NumeroComplejo NumeroComplejo::sumarNumeroComplejo(NumeroComplejo numeroComplejo)
+NumeroComplejo NumeroComplejo::operator+(NumeroComplejo numeroComplejo)
 {
     NumeroComplejo numeroComplejoResultado;
     numeroComplejoResultado.real = real + numeroComplejo.real;
@@ -21,7 +21,7 @@ NumeroComplejo NumeroComplejo::sumarNumeroComplejo(NumeroComplejo numeroComplejo
     return numeroComplejoResultado;
 }
 
-NumeroComplejo NumeroComplejo::restarNumeroComplejo(NumeroComplejo numeroComplejo)
+NumeroComplejo NumeroComplejo::operator-(NumeroComplejo numeroComplejo)
 {
     NumeroComplejo numeroComplejoResultado;
     numeroComplejoResultado.real = real - numeroComplejo.real;
@@ -29,7 +29,7 @@ NumeroComplejo NumeroComplejo::restarNumeroComplejo(NumeroComplejo numeroComplej
     return numeroComplejoResultado;
 }
 
-NumeroComplejo NumeroComplejo::multiplicarNumeroComplejo(NumeroComplejo numeroComplejo)
+NumeroComplejo NumeroComplejo::operator*(NumeroComplejo numeroComplejo)
 {
     NumeroComplejo numeroComplejoResultado;
     numeroComplejoResultado.real = (real * numeroComplejo.real) - (imaginario * numeroComplejo.imaginario);

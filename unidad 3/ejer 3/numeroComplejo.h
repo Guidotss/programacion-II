@@ -6,9 +6,9 @@ class NumeroComplejo{
     public: 
         NumeroComplejo();  
         NumeroComplejo(float _real, float _imaginario);
-        NumeroComplejo sumarNumeroComplejo(NumeroComplejo);
-        NumeroComplejo restarNumeroComplejo(NumeroComplejo);
-        NumeroComplejo multiplicarNumeroComplejo(NumeroComplejo);
+        NumeroComplejo operator+(NumeroComplejo);
+        NumeroComplejo operator-(NumeroComplejo);
+        NumeroComplejo operator*(NumeroComplejo);
         
         void setReal(float _real);
         void setImaginario(float _imaginario);
