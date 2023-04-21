@@ -1,7 +1,8 @@
-#include<iostream>
-#include"persona.h"
+#include <iostream>
+#include "persona.h"
 
-Persona::Persona() {
+Persona::Persona()
+{
     nombre = " ";
     fechaNacimiento = " ";
     sexo = " ";
@@ -11,7 +12,8 @@ Persona::Persona() {
     altura = 0;
 }
 
-Persona::Persona(std::string _nombre, int _edad, std::string _sexo) {
+Persona::Persona(std::string _nombre, int _edad, std::string _sexo)
+{
     nombre = _nombre;
     edad = _edad;
     sexo = _sexo;
@@ -21,7 +23,8 @@ Persona::Persona(std::string _nombre, int _edad, std::string _sexo) {
     altura = 0;
 }
 
-Persona::Persona(std::string _nombre, int _edad, std::string _sexo, int _dni, std::string _fechaNacimiento, float _peso, float _altura) {
+Persona::Persona(std::string _nombre, int _edad, std::string _sexo, int _dni, std::string _fechaNacimiento, float _peso, float _altura)
+{
     nombre = _nombre;
     edad = _edad;
     sexo = _sexo;
@@ -33,37 +36,43 @@ Persona::Persona(std::string _nombre, int _edad, std::string _sexo, int _dni, st
 
 Persona::~Persona() {}
 
-void Persona::setNombre(std::string _nombre) {
+void Persona::setNombre(std::string _nombre)
+{
     nombre = _nombre;
 }
 
-void Persona::setFechaNacimiento(std::string _fechaNacimiento) {
+void Persona::setFechaNacimiento(std::string _fechaNacimiento)
+{
     fechaNacimiento = _fechaNacimiento;
 }
 
-void Persona::setSexo(std::string _sexo) {
+void Persona::setSexo(std::string _sexo)
+{
     sexo = _sexo;
 }
 
-void Persona::setDni(int _dni) {
+void Persona::setDni(int _dni)
+{
     dni = _dni;
 }
 
-
-void Persona::setEdad(int _edad) {
+void Persona::setEdad(int _edad)
+{
     edad = _edad;
 }
 
-void Persona::setPeso(float _peso) {
+void Persona::setPeso(float _peso)
+{
     peso = _peso;
 }
 
-void Persona::setAltura(float _altura) {
+void Persona::setAltura(float _altura)
+{
     altura = _altura;
 }
 
-
-void Persona::mostrar() {
+void Persona::mostrar()
+{
     std::cout << "Nombre: " << nombre << std::endl;
     std::cout << "Fecha de nacimiento: " << fechaNacimiento << std::endl;
     std::cout << "Sexo: " << sexo << std::endl;
@@ -73,53 +82,66 @@ void Persona::mostrar() {
     std::cout << "Altura: " << altura << std::endl;
 }
 
-void Persona::calcularIMC() {
+void Persona::calcularIMC()
+{
     float imc = peso / (altura * altura);
-    if (imc < 20) {
+    if (imc < 20)
+    {
         std::cout << "El IMC es: " << imc << " y esta por debajo del peso ideal" << std::endl;
     }
-    else if (imc >= 20 && imc <= 25) {
+    else if (imc >= 20 && imc <= 25)
+    {
         std::cout << "El IMC es: " << imc << " y esta en el peso ideal" << std::endl;
     }
-    else {
+    else
+    {
         std::cout << "El IMC es: " << imc << " y esta por encima del peso ideal" << std::endl;
     }
 }
 
-int Persona::getDni() {
+int Persona::getDni()
+{
     return dni;
 }
 
-int Persona::getEdad() {
+int Persona::getEdad()
+{
     return edad;
 }
 
-float Persona::getPeso() {
+float Persona::getPeso()
+{
     return peso;
 }
 
-float Persona::getAltura() {
+float Persona::getAltura()
+{
     return altura;
 }
 
-bool Persona::esMayorDeEdad() {
-    if (edad >= 18) {
+bool Persona::esMayorDeEdad()
+{
+    if (edad >= 18)
+    {
         return true;
     }
-    else {
+    else
+    {
         return false;
     }
 }
 
-std::string Persona::getNombre() {
+std::string Persona::getNombre()
+{
     return nombre;
 }
 
-std::string Persona::getFechaNacimiento() {
+std::string Persona::getFechaNacimiento()
+{
     return fechaNacimiento;
 }
 
-std::string Persona::getSexo() {
+std::string Persona::getSexo()
+{
     return sexo;
 }
-

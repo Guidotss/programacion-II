@@ -1,7 +1,7 @@
-#include"cronometro.h"
+#include "cronometro.h"
 
-
-int main(){
+int main()
+{
 
     Cronometro cronometro1(23, 59, 58);
 
@@ -11,7 +11,5 @@ int main(){
 
     cronometro1.mostrarHora();
 
-
-
-    return 0; 
+    return 0;
 }

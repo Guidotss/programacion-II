@@ -1,7 +1,7 @@
-#include"banco.h"
+#include "banco.h"
 
-
-int main(){
+int main()
+{
 
     Banco cuenta1(1234, 0.05);
     cuenta1.depositar(1000);
@@ -16,7 +16,5 @@ int main(){
     cuenta1.acrecentarInteres();
     cuenta1.mostrar();
 
-    
-
-    return 0; 
+    return 0;
 }

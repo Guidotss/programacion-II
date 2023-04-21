@@ -1,9 +1,10 @@
-#include"numeroComplejo.h"
+#include "numeroComplejo.h"
 
-int main(){
+int main()
+{
 
-    NumeroComplejo n1(1,2);
-    NumeroComplejo n2(4,2);
+    NumeroComplejo n1(1, 2);
+    NumeroComplejo n2(4, 2);
 
     NumeroComplejo n3 = n1.sumarNumeroComplejo(n2);
 
@@ -17,7 +18,5 @@ int main(){
 
     n3.mostrarNumeroComplejo();
 
-
-
-    return 0; 
+    return 0;
 }

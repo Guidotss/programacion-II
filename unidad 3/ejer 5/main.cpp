@@ -1,11 +1,10 @@
-#include"coordenadas.h"
+#include "coordenadas.h"
 
+int main()
+{
 
-int main(){
-
-    Coordenadas c1(1,2,3);
-    Coordenadas c2(4,5,6);
-
+    Coordenadas c1(1, 2, 3);
+    Coordenadas c2(4, 5, 6);
 
     c1.mostrarCoordenadas();
     c2.mostrarCoordenadas();
@@ -31,6 +30,5 @@ int main(){
     c1.polares();
     c2.polares();
 
-
-    return 0; 
+    return 0;
 }
