@@ -1,11 +1,10 @@
 #include "racional.h"
 
+int main()
+{
 
-int main(){
-
-    Racional r1(1,2);
-    Racional r2(4,2);
-    
+    Racional r1(1, 2);
+    Racional r2(4, 2);
 
     Racional r3 = r1.sumarRacional(r2);
 
@@ -26,8 +25,6 @@ int main(){
     r3 = r2.simplificarRacional();
 
     r3.mostrarRacional();
-    
 
-
-    return 0; 
+    return 0;
 }
