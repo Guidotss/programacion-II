@@ -2,8 +2,10 @@
 #include<algorithm>
 #include"mago.h"
 
-Mago::Mago():Personaje(nombre, raza, fuerza, inteligencia, vida_maxima) {
-    this->hechizos={}; 
+
+
+Mago::Mago() : Personaje("Mago", "Humano", 10, 20, 100){ 
+    this->hechizos = {}; 
 };
 
 void Mago::mostrar(){ 
@@ -12,7 +14,7 @@ void Mago::mostrar(){
     std::cout << "Inteligencia: " << this->inteligencia << std::endl;
     std::cout << "Vida maxima: " << this->vida_maxima << std::endl;
     std::cout << "Vida actual: " << this->vida_actual << std::endl;
-    std::cout << "Hechizos: " << std::endl;
+    std::cout << "Hechizos: " << std::endl; 
     for (auto hechizo: this->hechizos) {
         std::cout << "\t" << hechizo << std::endl;
     }
