@@ -16,6 +16,7 @@ class Personaje {
         int vida_actual;
 
     public: 
+        Personaje() = default;
         Personaje(std::string nombre, std::string raza, int fuerza, int inteligencia, int vida_maxima){
             this->nombre = nombre;
             this->raza = raza;

@@ -2,8 +2,9 @@
 #include<algorithm>
 #include"mago.h"
 
-Mago::Mago():Personaje(nombre, raza, fuerza, inteligencia, vida_maxima) {
-    this->hechizos={}; 
+
+Mago::Mago():Personaje() {
+    this->hechizos = {}; 
 };
 
 void Mago::mostrar(){ 
