@@ -2,10 +2,6 @@
 #include<string>
 #include<vector>
 
-
-
-
-
 class Personaje {
     protected: 
         std::string nombre; 

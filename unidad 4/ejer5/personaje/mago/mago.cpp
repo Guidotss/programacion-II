@@ -13,7 +13,7 @@ void Mago::mostrar(){
     std::cout << "Inteligencia: " << this->inteligencia << std::endl;
     std::cout << "Vida maxima: " << this->vida_maxima << std::endl;
     std::cout << "Vida actual: " << this->vida_actual << std::endl;
-    std::cout << "Hechizos: " << std::endl;
+    std::cout << "Hechizos: " << std::endl; 
     for (auto hechizo: this->hechizos) {
         std::cout << "\t" << hechizo << std::endl;
     }
