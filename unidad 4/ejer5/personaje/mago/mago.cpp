@@ -1,10 +1,18 @@
 #include<iostream>
 #include<algorithm>
+#include<ctime>
 #include"mago.h"
 
-
 Mago::Mago():Personaje() {
-    this->hechizos = {}; 
+    std::srand(std::time(nullptr));
+
+    this->nombre = nombre; 
+    this->raza = raza;
+    this->fuerza = rand()%(14 + 1);
+    this->inteligencia = 17 + rand()%((20+1)-17);
+    this->vida_maxima =  std::rand()%(99 + 1);
+    this->vida_actual = rand()%(this->vida_maxima+1); 
+    this->hechizos = {};
 };
 
 void Mago::mostrar(){ 
@@ -20,6 +28,10 @@ void Mago::mostrar(){
 };
 
 void Mago::aprender_hechizo(std::string hechizo) { 
+    if(this->hechizos.size() == 4){ 
+        std::cout<<"No se pueden aprender mas hechizos"<<std::endl;
+        return;
+    }
     this->hechizos.push_back(hechizo);
 };
 

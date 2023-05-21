@@ -1,3 +1,3 @@
 #include <iostream>
 
-int Menu();
+void Menu();
