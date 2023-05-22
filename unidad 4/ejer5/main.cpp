@@ -38,7 +38,7 @@ int main(){
         std::cout<<mago1->Get_nombre()<<" esta muerto"<<std::endl;
         return 0; 
     }
-    
+
     std::cout<<"-----------------------------"<<std::endl;
     dynamic_cast<Clerigo*>(clerigo.get())->curar(*mago2.get()); 
     if(mago2->Get_vida_actual() < 0) {

@@ -14,14 +14,24 @@ Clerigo::Clerigo(std::string dios) :Personaje() {
 }
 
 
+<<<<<<< HEAD
 void Clerigo::mostrar() { 
     std::cout << "Nombre: " << this->nombre << std::endl;
     std::cout << "Raza: " << this->raza << std::endl;
     std::cout << "Dios: " << this->dios << std::endl;
+=======
+void Clerigo::mostrar() {
+    std::cout << "Nombre: " << this->nombre << std::endl;
+    std::cout << "Raza: " << this->raza << std::endl;
+>>>>>>> f578297a765bc2252ecb0e5a12f6fe82d6adde3c
     std::cout << "Fuerza: " << this->fuerza << std::endl;
     std::cout << "Inteligencia: " << this->inteligencia << std::endl;
     std::cout << "Vida maxima: " << this->vida_maxima << std::endl;
     std::cout << "Vida actual: " << this->vida_actual << std::endl;
+<<<<<<< HEAD
+=======
+    std::cout << "Dios: " << this->dios << std::endl;
+>>>>>>> f578297a765bc2252ecb0e5a12f6fe82d6adde3c
 }
 
 
@@ -98,7 +108,6 @@ int Clerigo::Get_inteligencia() {
 int Clerigo::Get_vida_maxima() {
     return this->vida_maxima;
 }
-
 
 
 int Clerigo::Get_vida_actual() {
