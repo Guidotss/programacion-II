@@ -37,6 +37,10 @@ void Mago::aprender_hechizo(std::string hechizo) {
 
 void Mago::lanzar_hechizo(Personaje& enemigo, std::string hechizo){
     std::cout << this->nombre << " lanza " << hechizo << " a " << enemigo.Get_nombre() << std::endl;
+    if(this->vida_actual < 0) { 
+        std::cout << this->nombre << " esta muerto" << std::endl;
+        return;
+    }
     enemigo.Set_vida_actual(enemigo.Get_vida_actual() - 10);
 
     this->hechizos.erase(std::find(this->hechizos.begin(), this->hechizos.end(), hechizo));    
