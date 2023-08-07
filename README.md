@@ -4,7 +4,7 @@
 
 ### Para ejecutar los ejercicios en la terminal
 
-```
+```shell
     # ingresar a la carpeta 
     cd ${nombre de la carpeta} 
     
